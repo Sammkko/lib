@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru-ru">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+	<link rel="stylesheet" href="./static/style/style.css">
+
+    <link rel="stylesheet" href="./index_files/normalize.min.css" media="screen">
+    <link rel="stylesheet" href="./index_files/modal.min.css" media="screen">
+    <link rel="stylesheet" href="./index_files/forms.min.css" media="screen">
+
+    <script type="text/javascript" src="./index_files/jquery.min.js.загрузка"></script>
+    <script type="text/javascript" src="./index_files/astc.min.js.загрузка"></script>
+
+
+
+
+    <script>
+        $(function () {
+            window.modal = {
+                getModal: function (title = 'Заголовок', descr = 'Описание', modal_class = '') {
+                    var modal_template = `
+							<div class="modal_bg">
+								<div class="modal_body ${modal_class}">
+									<div class="modal_close"><i class="fa fa-times"></i></div>
+									<div class="modal_inner">
+										<div class="modal_title">${title}</div>
+										<div class="modal_descr">${descr}</div>
+									</div>
+								</div>
+							</div>`;
+                    $('body').append(modal_template);
+                    $('body').addClass('modal2');
+                },
+                init: function () {
+                    $('body').on('click', '.modal_close', function () {
+                        $(this).parent().parent().remove();
+                        $('body').removeClass('modal2');
+                    });
+                    $('body').on('click', '.modal_body', function (e) {
+                        e.stopPropagation();
+                    });
+                    $('body').on('click', '.modal_bg', function (e) {
+                        $(this).find('.modal_close').click();
+                    });
+                }
+            };
+            window.modal.init();
+        });
+    </script>
+
+
+    <script type="text/javascript" src="./static/js/underscore-min.js"></script>
+
+
+    <script>window.tobiz = { "project_id": "289490", "project_domain": "", "page_title": "", "page_dir": "", "personal_seo_configs": "1", "seo_title": "", "seo_keywords": "", "seo_description": "", "OG_image": "", "access_control": "0", "valid_login": "", "valid_password": "", "pp": "0", "rep_id": "530275", "user_id": "199540", "owner_email": "wolf.j2.sam@gmail.com", "user_email": "wolf.j2.sam@gmail.com", "user_pnf": "270.00", "bs": true, "t": "8", "free": 0, "products_on": "0", "articles_on": "0", "page_config": { "title_font": "Georgia, serif", "text_font": "Montserrat, sans-serif", "menu_font": "Montserrat, sans-serif", "btn_font": "Montserrat, sans-serif", "link_color": "#f78960" }, "showIntro": 1, "w": 1, "basket_conf": null }</script>
+
+
+    <!-- Tobiz styles -->
+    <link rel="stylesheet" href="./static/style/tobiz.css">
+    <!-- Tobiz modules styles -->
+
+
+    <script type="text/javascript" src="./static/js/script.min.js"></script>
+    <script type="text/javascript" src="./static/js/auth.js"></script>
+    <script type="text/javascript">tobiz.blocks = [];</script>
+
+
+
+
+    <meta content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+
+    <link rel="stylesheet" href="./static/style/media.css">
+
+
+    <meta name="format-detection" content="telephone=no">
+
+
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Научная библиотека</title>
+
+
+
+    <meta property="og:image" content="/img/500x0/019100694b7a08af39baf7585363b849.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./static/style/css2.css" rel="stylesheet">
+
+    <style id="page_style">
+        body,
+        #wrapper {
+            font-family: Montserrat, sans-serif;
+        }
+
+        .section .section_inner .title {
+            font-family: Georgia, serif;
+        }
+
+        a {
+            color: #f78960;
+        }
+
+        .section .btn1 {
+            font-family: Montserrat, sans-serif
+        }
+
+        .section .btn2 {
+            font-family: Montserrat, sans-serif
+        }
+
+        .section .btn3 {
+            font-family: Montserrat, sans-serif
+        }
+
+        .section .submit_btn {
+            font-family: Montserrat, sans-serif
+        }
+
+        :root {
+            --cookie_btn_font: Montserrat, sans-serif--cookie_btn_bg:;
+            --cookie_btn_bg_hover: ;
+            --cookie_btn_color: #fff;
+        }
+
+        #wrapper .menu li,
+        #wrapper .menu1 li,
+        #wrapper .menu2 li,
+        #wrapper .menu3 li {
+            font-family: Montserrat, sans-serif;
+        }
+
+
+
+        :root {}
+    </style>
+
+
+
+    <link rel="stylesheet" href="./static/style/css.css" type="text/css">
+    <link rel="stylesheet" href="./static/style/icon.css" type="text/css">
+    <link rel="stylesheet" href="./static/style/fa.min.css" type="text/css">
+
+</head>
+
+<body class="editor_false  lang_ru     not_ie">
+
+    <div id="wrapper" class="" style="padding-top: 88px;">
+
+        <div class="section section2116 fixed_top" "="" style=" background-color: rgb(255, 255, 255); padding-top: 0px;
+            padding-bottom: 0px; position: fixed; top: 0px; z-index: 101; left: 0px;" data-id="4722802" id="b_4722802">
+            <a name="a_2478125"></a>
+            <div class="section_inner logo_left">
+                <div class="wrapp">
+                    <div class="menu-toogler square new_burger" style="color:#000;background-color:#fff"><svg>
+                            <use xlink:href="/img/menu_burger.svg#menu"></use>
+                        </svg></div>
+                    <div class="logo">
+                        <div class="logo_img">
+                            <img data-lazy="1" src="./static/img/logo.png">
+                        </div>
+                    </div>
+                    <div class="menu1 menu_block animate_menu3"
+                        style="color:#212121;background-color:#fff;font-size:18px">
+                        <ul>
+                            <li class="level0"><a href="index.html" title="Главная">Главная</a></li>
+                            <li class="level0"><a href="#anchor6" title="Книги ">Книги </a></li>
+                            <li class="level0"><a href="#anchor7" title="Новости">Новости</a></li>
+                            <li class="level0"><a href="#anchor4" title="Ресурсы библиотек">Ресурсы библиотек</a></li>
+                            <li class="level0"><a href="#anchor5" title="О библиотеке">О библиотеке</a></li>
+                            <li class="level0"><a href="#anchor9" title="История">История</a></li>
+                            <li class="level0"><a href="#anchor3" title="Структура">Структура</a></li>
+                            <li class="level0"><a href="#anchor8" title="Контакты">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="readers">
+            <div class="structure_container">
+                <h1 class="structure_title">Каталог</h1>
+                <div class="readers_content">
+                    <div class="readers_box">
+                        <img src="./static/img/st1.jpg" alt="">
+                    </div>
+                   
+                        <div class="readers_text">
+                            <h1>lorem100</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, minus eos iusto dolore culpa, dicta quos mollitia officia quia doloribus vel dignissimos adipisci pariatur natus maiores nulla inventore ducimus accusamus ipsa similique repellendus facilis. Explicabo accusamus beatae, accusantium eligendi quidem temporibus consequatur neque porro unde atque odit maiores, cumque quia nobis. Dolore totam sed deleniti praesentium dolores explicabo obcaecati aspernatur! Architecto dolorum iure dolor distinctio nostrum quia quidem perspiciatis veritatis. Corrupti, porro? Incidunt, quae labore tenetur doloremque consequuntur fuga exercitationem corporis dignissimos ipsam quis, porro perspiciatis consectetur reiciendis? Eos saepe dicta pariatur eligendi! Assumenda a quibusdam numquam vero nesciunt. Accusantium.</p>
+                        </div> 
+                  
+                </div>
+
+                <div class="readers_content">
+                    <div class="readers_box">
+                        <img src="./static/img/st1.jpg" alt="">
+                    </div>
+                   
+                        <div class="readers_text">
+                            <h1>lorem100</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, minus eos iusto dolore culpa, dicta quos mollitia officia quia doloribus vel dignissimos adipisci pariatur natus maiores nulla inventore ducimus accusamus ipsa similique repellendus facilis. Explicabo accusamus beatae, accusantium eligendi quidem temporibus consequatur neque porro unde atque odit maiores, cumque quia nobis. Dolore totam sed deleniti praesentium dolores explicabo obcaecati aspernatur! Architecto dolorum iure dolor distinctio nostrum quia quidem perspiciatis veritatis. Corrupti, porro? Incidunt, quae labore tenetur doloremque consequuntur fuga exercitationem corporis dignissimos ipsam quis, porro perspiciatis consectetur reiciendis? Eos saepe dicta pariatur eligendi! Assumenda a quibusdam numquam vero nesciunt. Accusantium.</p>
+                        </div> 
+                  
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="section section112" style="background-color:#f1f1f1;padding-top:40px;padding-bottom:40px"
+            data-id="4722825" id="b_4722825"><a name="a_4722825"></a>
+            <div class="section_inner width1170 hide_phone">
+                <!-- <div class="logo_block">
+					<div class="logo_img">
+						<img data-lazy="1" src="./static/img/logo.png">
+					</div>
+				</div> -->
+                <div class="menus_block">
+                    <div class="menu1 menu" style="color:#333">
+                        <div class="menu1_ul" style="font-size:14px;color:#333">
+                            <ul>
+                                <li class="level0"><a href="#"
+                                        title="Главный корпус Общий отдел: +996 3222 7-22-73, факс +996 3222 7-09-15, edu@oshsu.kg">Главный
+                                        корпус Общий отдел: +996 3222 7-22-73, факс +996 3222 7-09-15, edu@oshsu.kg</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menu_text1 menu_text">
+                            <p>© OSHSU. All rights reserved</p>
+                        </div>
+                        <div class="phone1 zphone ">9999</div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <script>
+
+        (function () {
+
+            var resources_css = [
+                'https://fonts.googleapis.com/css?family=Roboto&display=swap',
+                'https://fonts.googleapis.com/icon?family=Material+Icons&display=swap',
+                '/fonts/font-awesome-4.7.0/css/fa.min.css'
+            ];
+            var resource = [];
+            _.each(resources_css, function (element, index) {
+                resource[index] = document.createElement('link');
+                resource[index].setAttribute("rel", "stylesheet");
+                resource[index].setAttribute("href", element);
+                resource[index].setAttribute("type", "text/css");
+
+                var head = document.getElementsByTagName('head')[0];
+                head.appendChild(resource[index]);
+
+            });
+
+        })();
+
+    </script>
+
+
+
+
+
+    <script src="./static/js/swipe.min.js" defer=""></script>
+    <script type="text/javascript" src="./static/js/mask.min.js" defer=""></script>
+    <script type="text/javascript" src="./static/js/lazyload.min.js"></script>
+    <script type="text/javascript" src="./static/js/anime.min.js" defer=""></script>
+
+
+    <script type="text/javascript" src="./static/js/json.txt" defer=""></script>
+
+
+
+</body>
+
+</html>
